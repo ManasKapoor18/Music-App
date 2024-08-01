@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/sidebar";
 import Header from "@/components/header";
+import PlaylistSection from "@/components/playlistSection";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
           <Header />
           <main className="px-6 py-2 flex-1 overflow-y-auto">{children}</main>
         </div>
+        <PlaylistSection />
       </body>
     </html>
   );
