@@ -5,16 +5,14 @@ import { FaBars } from "react-icons/fa";
 const Sidebar = () => {
   return (
     <div>
-      <aside
-        className={`fixed h-full bg-gray-900 p-4 transform transition-transform md:translate-x-0 md:static w-64`}
-      >
+      <div className="bg-gray-900 p-4 min-h-screen">
         <div className="flex items-center justify-between mb-6">
           <div className="text-xl font-bold">Musicify</div>
           <button className="md:hidden">
             <FaBars />
           </button>
         </div>
-        <ul className="space-y-4 overflow-y-auto h-full">
+        <ul>
           <li>Home</li>
           <li>Discover</li>
           <li>Collections</li>
@@ -22,7 +20,7 @@ const Sidebar = () => {
           <li>Favourites</li>
           <li>Local Files</li>
         </ul>
-      </aside>
+      </div>
     </div>
   );
 };
