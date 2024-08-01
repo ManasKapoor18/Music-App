@@ -1,6 +1,12 @@
 // components/MusicPlayer.tsx
 import React from "react";
-import { FaPause, FaPlay, FaVolumeUp } from "react-icons/fa";
+import {
+  FaMicrophone,
+  FaPause,
+  FaPlay,
+  FaShareAlt,
+  FaVolumeUp,
+} from "react-icons/fa";
 
 import { FaForwardStep, FaBackwardStep } from "react-icons/fa6";
 
@@ -16,28 +22,32 @@ const MusicPlayer = () => {
           <p className="text-sm">Artist Name</p>
         </div>
       </div>
-      <div className="flex items-center space-x-4">
-        <button className="p-2 rounded mx-1">
-          <FaBackwardStep />
-        </button>
-        <button className="bg-gray-700 p-2 rounded-full mx-1">
-          <FaPause />
-        </button>
-        <button className="p-2 rounded mx-1">
-          <FaForwardStep />
-        </button>
+      <div className="flex flex-col items-center space-x-4 space-y-4">
+        <div>
+          <button className="p-2 rounded mx-1">
+            <FaBackwardStep />
+          </button>
+          <button className="bg-gray-700 p-2 rounded-full mx-1">
+            <FaPause />
+          </button>
+          <button className="p-2 rounded mx-1">
+            <FaForwardStep />
+          </button>
+        </div>
+        <input type="range" min="0" max="100" className="w-72 bg-white" />
       </div>
       <div className="flex items-center space-x-4">
-        <input
-          type="range"
-          className="w-32 h-1 bg-blue-500 appearance-none rounded-full"
-        />
         <div className="flex items-center space-x-2">
-          <FaVolumeUp className="text-xl" />
-          <input
-            type="range"
-            className="w-16 h-1 bg-blue-500 appearance-none rounded-full"
-          />
+          <button>
+            <FaVolumeUp className="text-xl" />
+          </button>
+          <input type="range" min="0" max="100" className="w-16 bg-white" />
+          <button>
+            <FaMicrophone />
+          </button>
+          <button>
+            <FaShareAlt />
+          </button>
         </div>
       </div>
     </div>

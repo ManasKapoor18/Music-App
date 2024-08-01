@@ -2,19 +2,19 @@ import Image from "next/image";
 
 const Home = () => {
   return (
-    <div className="space-y-3 mx-auto">
-      <div className="bg-pink-500 px-6 py-3 rounded-lg inline-flex flex-row space-x-6 mx-auto">
+    <div className="space-y-3 mx-auto mb-32">
+      <div className="bg-pink-500 px-6 py-3 rounded-lg inline-flex flex-row space-x-6 mx-auto w-full">
         <div className="mr-36">
           <p className="mb-2">New Album</p>
-          <h1 className="text-3xl font-bold mb-2">THE SECOND STEP:</h1>
-          <h1 className="text-3xl font-bold mb-2">CHAPTER ONE</h1>
+          <h1 className="text-2xl font-bold mb-2">THE SECOND STEP:</h1>
+          <h1 className="text-2xl font-bold mb-2">CHAPTER ONE</h1>
           <h1 className="text-2xl text-black font-bold mb-4">TREASURE</h1>
           <button className="mt-4 bg-[#000fff] text-white px-4 py-2 rounded-lg">
             LISTEN NOW
           </button>
         </div>
         <div>
-          <Image src={"/images/bts.png"} alt="bts" height={180} width={400} />
+          <Image src={"/images/bts.png"} alt="bts" height={180} width={300} />
         </div>
       </div>
       <div className="text-xl font-bold">Hello, Woilon</div>
