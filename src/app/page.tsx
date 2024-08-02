@@ -18,7 +18,7 @@ const Home = () => {
         </div>
       </div>
       <div className="text-xl font-bold">Hello, Manas</div>
-      <div className="inline-grid grid-cols-1 gap-4 md:grid-cols-3 mx-auto md:w-full ml-2 md:ml-0">
+      <div className="inline-grid grid-cols-1 gap-4 md:grid-cols-3 mx-auto md:w-full ml-4 md:ml-0">
         <div className="hover:scale-105 transition-transform rounded-md mb-2 md:mx-auto">
           <Image
             src={"/images/hothits.png"}
@@ -56,7 +56,7 @@ const Home = () => {
         </div>
       </div>
       <div className="text-xl font-bold">New releases for you</div>
-      <div className="inline-grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto md:w-full ml-2 md:ml-0">
+      <div className="inline-grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto md:w-full ml-4 md:ml-0">
         <div className="hover:scale-105 transition-transform rounded-md mb-2 md:mx-auto">
           <Image
             src={"/images/song1.png"}
