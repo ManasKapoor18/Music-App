@@ -31,16 +31,16 @@ const MusicPlayer = () => {
   };
 
   return (
-    <div className="fixed bottom-0 left-0 w-full bg-gray-900 text-white p-4 flex items-center justify-between shadow-lg rounded-t-lg">
+    <div className="fixed bottom-0 left-0 w-full bg-gray-900 text-white md:p-4 pr-8 pl-4 py-4 flex items-center justify-between shadow-lg rounded-t-lg">
       <div className="flex items-center space-x-4">
-        <div className="bg-gray-700 p-2 rounded">
+        <div className="bg-gray-700 p-2 rounded md:block hidden">
           <FaPlay className="text-xl" />
         </div>
-        <div>
+        <div className="">
           <h3 className="text-lg font-bold">As It Was</h3>
           <p className="text-sm">Harry Styles</p>
         </div>
-        <div className="space-x-1 ml-8">
+        <div className="space-x-1 ml-8 md:block hidden">
           <button onClick={toggleColor} className="p-2">
             <FaHeart
               size={24}
@@ -73,9 +73,18 @@ const MusicPlayer = () => {
             <RxLoop />
           </button>
         </div>
-        <input type="range" min="0" max="100" className="w-72 bg-white" />
+        <input
+          type="range"
+          min="0"
+          max="100"
+          className="w-72 bg-white md:block hidden"
+        />
+        {/* <div className="block md:hidden">
+          <h3 className="text-md font-bold">As It Was</h3>
+          <p className="text-xs">Harry Styles</p>
+        </div> */}
       </div>
-      <div className="flex items-center space-x-4 mr-8">
+      <div className="md:flex items-center space-x-4 mr-8 hidden">
         <div className="flex items-center space-x-2">
           <button onClick={toggleVolume}>
             {!isVolume ? (

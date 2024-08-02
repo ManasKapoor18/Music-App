@@ -5,6 +5,7 @@ import Sidebar from "@/components/sidebar";
 import Header from "@/components/header";
 import PlaylistSection from "@/components/playlistSection";
 import MusicPlayer from "@/components/musicPlayer";
+import MobileHeader from "@/components/mobileHeader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,14 +23,15 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className="min-h-screen bg-gray-900 text-white flex">
-          <div className="fixed w-1/5">
+          <div className="fixed md:w-1/5 md:block hidden">
             <Sidebar />
           </div>
-          <div className="w-3/5 bg-gray-800 mx-auto justify-center items-center ">
+          <div className="md:w-3/5 w-full bg-gray-800 mx-auto justify-center items-center ">
             <Header />
+            <MobileHeader />
             <main className="px-6 py-2 flex-1">{children}</main>
           </div>
-          <div className="fixed w-1/5 right-0">
+          <div className="fixed md:w-1/5 md:block hidden right-0">
             <PlaylistSection />
           </div>
           <MusicPlayer />

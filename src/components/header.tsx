@@ -8,7 +8,7 @@ import {
 
 const Header = () => {
   return (
-    <header className="p-4">
+    <header className="p-4 md:block hidden">
       <div className="flex flex-row">
         <button className="ml-6 mr-2 ">
           <FaChevronLeft size={18} />
