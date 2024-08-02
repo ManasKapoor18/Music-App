@@ -18,74 +18,74 @@ const Home = () => {
         </div>
       </div>
       <div className="text-xl font-bold">Hello, Manas</div>
-      <div className="inline-grid grid-cols-1 md:grid-cols-3 gap-4 md:mx-auto ml-8">
-        <div className="">
+      <div className="inline-grid grid-cols-1 gap-4 md:grid-cols-3 mx-auto md:w-full ml-8 md:ml-0">
+        <div className="hover:scale-105 transition-transform rounded-md mb-2 md:mx-auto">
           <Image
             src={"/images/hothits.png"}
             alt="bts"
             height={300}
             width={280}
-            className="rounded-md mb-2"
+            className="rounded-md"
           />
           <div className="text-md font-bold">Today&apos;s Hot Hits</div>
           <div className="text-xs text-gray-400">
             The most played tracks right now
           </div>
         </div>
-        <div className="">
+        <div className="hover:scale-105 transition-transform rounded-md mb-2 md:mx-auto">
           <Image
             src={"/images/risingsun.png"}
             alt="bts"
             height={300}
             width={280}
-            className="rounded-md mb-2"
+            className="rounded-md"
           />
           <div className="text-md font-bold">Land of rising sun</div>
           <div className="text-xs text-gray-400">By Woilon</div>
         </div>
-        <div className="">
+        <div className="hover:scale-105 transition-transform rounded-md mb-2 md:mx-auto">
           <Image
             src={"/images/guitar.png"}
             alt="bts"
             height={300}
             width={280}
-            className="rounded-md mb-2"
+            className="rounded-md"
           />
           <div className="text-md font-bold">Tickets to My Downfall</div>
           <div className="text-xs text-gray-400">Machine Gun Kelly</div>
         </div>
       </div>
       <div className="text-xl font-bold">New releases for you</div>
-      <div className="inline-grid grid-cols-1 md:grid-cols-3 gap-4 md:mx-auto ml-8">
-        <div className="">
+      <div className="inline-grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto md:w-full ml-8 md:ml-0">
+        <div className="hover:scale-105 transition-transform rounded-md mb-2 md:mx-auto">
           <Image
             src={"/images/song1.png"}
             alt="bts"
             height={300}
             width={280}
-            className="rounded-md mb-2"
+            className="rounded-md"
           />
           <div className="text-md font-bold">Stick Season</div>
           <div className="text-xs text-gray-400">Noah Kahan</div>
         </div>
-        <div className="">
+        <div className="hover:scale-105 transition-transform rounded-md mb-2 md:mx-auto">
           <Image
             src={"/images/wave.png"}
             alt="bts"
             height={300}
             width={280}
-            className="rounded-md mb-2"
+            className="rounded-md"
           />
           <div className="text-md font-bold">I wanna be yours</div>
           <div className="text-xs text-gray-400">By Arctic Monkeys</div>
         </div>
-        <div className="">
+        <div className="hover:scale-105 transition-transform rounded-md mb-2 md:mx-auto">
           <Image
             src={"/images/song2.png"}
             alt="bts"
             height={300}
             width={280}
-            className="rounded-md mb-2"
+            className="rounded-md"
           />
           <div className="text-md font-bold">As It Was</div>
           <div className="text-xs text-gray-400">Harry Styles</div>

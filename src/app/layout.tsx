@@ -22,11 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="min-h-screen bg-gray-900 text-white flex">
+        <div className="min-h-screen bg-gray-800 text-white flex">
           <div className="fixed md:w-1/5 md:block hidden">
             <Sidebar visible={true} />
           </div>
-          <div className="md:w-3/5 w-full bg-gray-800 mx-auto justify-center items-center ">
+          <div className="md:w-3/5 w-full bg-gray-800 mx-auto justify-center items-center">
             <Header />
             <MobileHeader />
             <main className="px-6 py-2 flex-1">{children}</main>

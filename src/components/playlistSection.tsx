@@ -99,7 +99,7 @@ const PlaylistSection: React.FC<PlaylistSectionProps> = ({ visible }) => {
             </div>
           </div>
         </div>
-        <button className="w-full py-2 bg-gray-300 rounded text-center font-semibold mt-16 text-black">
+        <button className="hover:scale-105 transition-transform w-full py-2 bg-gray-300 rounded text-center font-semibold mt-16 text-black">
           Create New Playlist
         </button>
       </div>
