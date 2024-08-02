@@ -24,7 +24,7 @@ export default function RootLayout({
       <body>
         <div className="min-h-screen bg-gray-900 text-white flex">
           <div className="fixed md:w-1/5 md:block hidden">
-            <Sidebar />
+            <Sidebar visible={true} />
           </div>
           <div className="md:w-3/5 w-full bg-gray-800 mx-auto justify-center items-center ">
             <Header />
@@ -32,7 +32,7 @@ export default function RootLayout({
             <main className="px-6 py-2 flex-1">{children}</main>
           </div>
           <div className="fixed md:w-1/5 md:block hidden right-0">
-            <PlaylistSection />
+            <PlaylistSection visible={true} />
           </div>
           <MusicPlayer />
         </div>
