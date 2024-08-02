@@ -13,11 +13,11 @@ const Home = () => {
             LISTEN NOW
           </button>
         </div>
-        <div>
-          <Image src={"/images/bts.png"} alt="bts" height={180} width={300} />
+        <div className="my-auto">
+          <Image src={"/images/bts.png"} alt="bts" height={230} width={320} />
         </div>
       </div>
-      <div className="text-xl font-bold">Hello, Woilon</div>
+      <div className="text-xl font-bold">Hello, Manas</div>
       <div className="inline-grid grid-cols-1 md:grid-cols-3 gap-4">
         <div className="">
           <Image
@@ -56,6 +56,41 @@ const Home = () => {
         </div>
       </div>
       <div className="text-xl font-bold">New releases for you</div>
+      <div className="inline-grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="">
+          <Image
+            src={"/images/song1.png"}
+            alt="bts"
+            height={300}
+            width={280}
+            className="rounded-md mb-2"
+          />
+          <div className="text-md font-bold">Stick Season</div>
+          <div className="text-xs text-gray-400">Noah Kahan</div>
+        </div>
+        <div className="">
+          <Image
+            src={"/images/wave.png"}
+            alt="bts"
+            height={300}
+            width={280}
+            className="rounded-md mb-2"
+          />
+          <div className="text-md font-bold">I wanna be yours</div>
+          <div className="text-xs text-gray-400">By Arctic Monkeys</div>
+        </div>
+        <div className="">
+          <Image
+            src={"/images/song2.png"}
+            alt="bts"
+            height={300}
+            width={280}
+            className="rounded-md mb-2"
+          />
+          <div className="text-md font-bold">As It Was</div>
+          <div className="text-xs text-gray-400">Harry Styles</div>
+        </div>
+      </div>
     </div>
   );
 };

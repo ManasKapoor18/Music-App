@@ -27,30 +27,30 @@ const PlaylistSection = () => {
         <div className="space-y-4 py-2">
           <div className="flex items-center space-x-2">
             <Image
-              src={"/images/hothits.png"}
+              src={"/images/song2.png"}
               alt="Song Thumbnail"
               width={40}
               height={40}
               className="rounded"
             />
             <div>
-              <p>Savage</p>
-              <p className="text-sm text-gray-400">Aespa</p>
+              <p>As It Was</p>
+              <p className="text-sm text-gray-400">Harry Styles</p>
             </div>
           </div>
         </div>
         <div className="space-y-4 py-2">
           <div className="flex items-center space-x-2">
             <Image
-              src={"/images/risingsun.png"}
+              src={"/images/song1.png"}
               alt="Song Thumbnail"
               width={40}
               height={40}
               className="rounded"
             />
             <div>
-              <p>Love Again</p>
-              <p className="text-sm text-gray-400">Baekhyun</p>
+              <p>Stick Season</p>
+              <p className="text-sm text-gray-400">Noah Kahan</p>
             </div>
           </div>
         </div>
@@ -76,7 +76,7 @@ const PlaylistSection = () => {
           </div>
           <div className="flex items-center space-x-2">
             <Image
-              src={"/images/risingsun.png"}
+              src={"/images/wave.png"}
               alt="Playlist Thumbnail"
               width={40}
               height={40}
@@ -84,10 +84,9 @@ const PlaylistSection = () => {
             />
             <div>
               <p>favourites</p>
-              <p className="text-sm text-gray-400">35 songs</p>
+              <p className="text-sm text-gray-400">45 songs</p>
             </div>
           </div>
-          {/* Repeat similar blocks for other playlists */}
         </div>
       </div>
       <button className="w-full py-2 bg-gray-300 rounded text-center font-semibold mt-16 text-black">
